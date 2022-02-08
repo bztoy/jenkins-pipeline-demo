@@ -27,5 +27,9 @@ pipeline {
                 echo 'Releasing'
             }
         }
+        stage('Finished') {
+            steps {
+		echo 'ready to use in PRD'
+	}}
     }
 }
